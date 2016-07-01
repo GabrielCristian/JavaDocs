@@ -36,7 +36,9 @@ public class Exercise3 {
         Set<String> first = new HashSet<String>();
         first.addAll(listToAdd);
 
-        Set<String> second = new TreeSet<String>();
+        Set<String> second = new TreeSet<String>(new NodeComparator());
+
+
         second.addAll(listToAdd);
 
         Set<String> third = new LinkedHashSet<String>();

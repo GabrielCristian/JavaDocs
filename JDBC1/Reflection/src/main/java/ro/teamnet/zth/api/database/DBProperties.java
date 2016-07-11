@@ -5,7 +5,7 @@ package ro.teamnet.zth.api.database;
  */
 public interface DBProperties {
 
-    String IP = "192.168.99.100";
+    String IP = "localhost";
     String PORT = "49161";
     String USER = "gabriel"; // user from SQL workshop
     String PASS = "gabriel"; // pass from SQL workshop

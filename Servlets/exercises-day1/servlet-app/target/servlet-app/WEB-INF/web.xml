@@ -27,6 +27,19 @@
         <servlet-name>ZeroToHero</servlet-name>
         <url-pattern>/views/zerotohero</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>InfoHttp</servlet-name>
+        <servlet-class>ro.teamnet.zth.web.InfoHttpServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+
+        <servlet-name>InfoHttp</servlet-name>
+        <url-pattern>/views/http-info</url-pattern>
+    </servlet-mapping>
+
+
     <!--Welcome file-->
     <welcome-file-list>
         <welcome-file>/index.html</welcome-file>

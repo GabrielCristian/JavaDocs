@@ -2,7 +2,10 @@ package ro.teamnet.zth.appl.controller;
 
 import ro.teamnet.zth.api.annotations.MyController;
 import ro.teamnet.zth.api.annotations.MyRequestMethod;
-import ro.teamnet.zth.appl.dao.DepartmentDao;
+import ro.teamnet.zth.appl.domain.Department;
+import ro.teamnet.zth.appl.service.impl.DepartmentServiceImpl;
+
+import java.util.List;
 
 /**
  * Created by user on 7/14/2016.
@@ -14,9 +17,8 @@ public class DepartmentController {
         return "oneDep";
     }
     @MyRequestMethod(urlPath = "/all")
-    public String getAllDepartments() {
-        String allDepartments = new String();
-        //allDepartments = new DepartmentDao().findAllDepartments().toString();
-        return "allDep";
+    public List<Department> getAllDepartments() {
+        return new DepartmentServiceImpl().findAllDepartments();
+
     }
 }

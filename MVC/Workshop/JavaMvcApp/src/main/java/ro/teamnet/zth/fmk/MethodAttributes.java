@@ -73,4 +73,11 @@ public class MethodAttributes {
                 ", methodType='" + methodType + '\'' +
                 '}';
     }
+    Class<?>[] parameterTypes;
+    public void setParameterTypes(Class<?>[] parameterTypes) {
+        this.parameterTypes = parameterTypes;
+    }
+    public Class<?>[] getParametersTypes() {
+        return this.parameterTypes;
+    }
 }
